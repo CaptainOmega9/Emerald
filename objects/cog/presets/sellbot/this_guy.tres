@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pickpocket.gd" id="2"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="3"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="4"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/misc/sleeve_2.png" id="5"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/misc/blazer_1.png" id="6"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/misc/leg_4.png" id="7"]
+[ext_resource type="PackedScene" path="res://models/cogs/heads/madhander.glb" id="8"]
+[ext_resource type="Texture2D" path="res://models/cogs/heads/headhunter_tt_t_ene_hed_headHunter.png" id="9"]
+[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="10"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="11"]
+
+[sub_resource type="Resource" id="Resource_o0iv3"]
+script = ExtResource("2")
+do_money_steal = false
+accuracy = 75
+damage = 1
+ignore_stats = false
+summary = "This is actually a bug."
+attack_lines = Array[String](["Boy, I really hope someone got fired for that blunder."])
+target_type = 0
+action_name = "ERR: COG HAS NO ATTACKS"
+one_time_use = false
+
+[resource]
+script = ExtResource("10")
+department = 0
+suit = 1
+custom_blazer_tex = ExtResource("6")
+custom_arm_tex = ExtResource("5")
+custom_leg_tex = ExtResource("7")
+cog_name = "This Guy"
+name_plural = "Those guys"
+head = ExtResource("8")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
+scale = 5.65
+head_textures = Array[Texture2D]([ExtResource("9")])
+hand_color = Color(0.853134, 0.732254, 0.703242, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1")]([SubResource("Resource_o0iv3"), ExtResource("3"), ExtResource("4")])
+level_low = 1
+level_high = 12
+status_effects = Array[ExtResource("11")]([])
+is_mod_cog = false
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["Where am I?", "Is this a dream?", "Help! I don't belong here!", "Is that animal standing on two legs?"])
+external_assets = {
+"head_model": "",
+"head_textures": ["user://save/custom_cogs/twoface.jpg"]
+}

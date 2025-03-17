@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pickpocket.gd" id="2"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/pink_slip.tres" id="3"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="4"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="5"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="6"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="7"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="8"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="9"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="10"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/law/sleeve.png" id="11"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/law/blazer.png" id="12"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/law/leg.png" id="13"]
+[ext_resource type="PackedScene" path="res://models/cogs/heads/yesman.glb" id="14"]
+[ext_resource type="Texture2D" path="res://models/cogs/heads/surgeongeneral_tex.png" id="15"]
+[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="16"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="17"]
+
+[sub_resource type="Resource" id="Resource_461fk"]
+script = ExtResource("2")
+do_money_steal = false
+accuracy = 75
+damage = 1
+ignore_stats = false
+summary = "This is actually a bug."
+attack_lines = Array[String](["Boy, I really hope someone got fired for that blunder."])
+target_type = 0
+action_name = "ERR: COG HAS NO ATTACKS"
+one_time_use = false
+
+[resource]
+script = ExtResource("16")
+department = 2
+suit = 1
+custom_blazer_tex = ExtResource("12")
+custom_arm_tex = ExtResource("11")
+custom_leg_tex = ExtResource("13")
+cog_name = "Dr. Little"
+name_plural = ""
+head = ExtResource("14")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
+scale = 2.5
+head_textures = Array[Texture2D]([ExtResource("15")])
+hand_color = Color(0.560907, 0.701034, 1, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1")]([SubResource("Resource_461fk"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10")])
+level_low = 6
+level_high = 12
+status_effects = Array[ExtResource("17")]([])
+is_mod_cog = false
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["Who are you calling Little?"])
+external_assets = {
+"head_model": "",
+"head_textures": ["user://save/custom_cogs/twoface.jpg"]
+}

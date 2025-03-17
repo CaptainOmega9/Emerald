@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="2"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="3"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="4"]
+[ext_resource type="PackedScene" path="res://models/cogs/heads/GoldenGoose.glb" id="5"]
+[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8"]
+
+[resource]
+script = ExtResource("6")
+department = 2
+suit = 1
+cog_name = "Legal Goose"
+name_plural = "Legal Geese"
+head = ExtResource("5")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
+scale = 6.55
+head_textures = Array[Texture2D]([])
+hand_color = Color(0.160961, 0.167272, 0.3514, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1")]([ExtResource("2"), ExtResource("3"), ExtResource("4")])
+level_low = 7
+level_high = 12
+status_effects = Array[ExtResource("7")]([ExtResource("8")])
+is_mod_cog = true
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["Even Golden Goose is afraid of me.", "How about a game of duck duck goose?", "This is so boring, it should be legal.", "I am going to give you illegal daydreams.", "You will lose this battle.", "Legally, I'm too big to fight you.", "I score, then I soar."])
+external_assets = {
+&"head_model": "",
+&"head_textures": ["user://save/custom_cogs/LegalGoose_GoldenGooseFinal.png"]
+}

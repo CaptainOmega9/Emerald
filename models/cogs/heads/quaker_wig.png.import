@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvxbygwobribc"
-path="res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"
+uid="uid://by4ltuejy4di2"
+path="res://.godot/imported/quaker_wig.png-bbe2906678976e4add6d3ce243459489.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/props/toon_props/cannon/cannon_0.png"
-dest_files=["res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"]
+source_file="res://models/cogs/heads/quaker_wig.png"
+dest_files=["res://.godot/imported/quaker_wig.png-bbe2906678976e4add6d3ce243459489.ctex"]
 
 [params]
 

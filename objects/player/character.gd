@@ -127,3 +127,24 @@ func moezart(player: Player) -> void:
 	player.stats.gags_unlocked['Sound'] = 1
 	player.stats.gags_unlocked['Drop'] = 1
 	player.stats.luck = 1.05
+	
+func jamiewhiskerton(player: Player) -> void:
+	player.stats.gags_unlocked['Sound'] = 1
+	player.stats.gags_unlocked['Throw'] = 1
+	player.stats.gag_effectiveness['Squirt'] = 1.01
+	player.stats.gag_effectiveness['Trap'] = 1.1
+	player.stats.gag_effectiveness['Lure'] = 0.7
+	player.stats.gag_effectiveness['Sound'] = 0.55
+	player.stats.gag_effectiveness['Throw'] = 1.02
+	player.stats.gag_effectiveness['Drop'] = 0.8
+
+func fatchester(player: Player) -> void:
+	player.stats.gags_unlocked['Squirt'] = 1
+	player.stats.gags_unlocked['Drop'] = 1
+	player.stats.gag_effectiveness['Drop'] = 1.1
+
+func tomcheezyburger(player: Player) -> void:
+	player.stats.gag_unlocked['Lure'] = 1
+	player.stats.gags_unlocked['Squirt'] = 1
+	player.stats.gag_effectiveness['Lure'] = 1.5
+	player.stats.quest_rerolls = 4

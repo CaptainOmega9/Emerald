@@ -22,6 +22,9 @@ var suits := LazyLoader.defer_dict({
 
 ## Player Characters
 const TOON_UNLOCK_ORDER : Array[PlayerCharacter] = [
+	preload('res://objects/player/characters/jamie_whiskerton.tres'),
+	preload('res://objects/player/characters/fat_chester.tres'),
+	preload('res://objects/player/characters/tom_cheezyburger.tres'),
 	preload('res://objects/player/characters/flippy.tres'),
 	preload('res://objects/player/characters/clerk_clara.tres'),
 	preload('res://objects/player/characters/julius_wheezer.tres'),

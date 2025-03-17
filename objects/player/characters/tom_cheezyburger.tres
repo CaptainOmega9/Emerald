@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=15 format=3 uid="uid://dudsxwexf3nn5"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_xy2n6"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_u05rx"]
+[ext_resource type="Texture2D" uid="uid://bi42fpqv2b4kg" path="res://models/toon/textures/clothes/shorts/desat_shorts_7.png" id="3_3hxdm"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_3vdrs"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="5_dnrmk"]
+[ext_resource type="Texture2D" uid="uid://c4qvk4ssy1c0n" path="res://models/toon/textures/clothes/shirts/desat_shirt_4.png" id="6_bc0bi"]
+[ext_resource type="Texture2D" uid="uid://cdawen500xuqx" path="res://models/toon/textures/clothes/shirts/desat_sleeve_4.png" id="7_endld"]
+[ext_resource type="Resource" uid="uid://5g45y2nxmf6d" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/tom_loadout.tres" id="8_1jtwt"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_ynq6l"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_8j3a8"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_xy2n6")
+damage = 0.9
+defense = 1.0
+evasiveness = 0.9
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("2_u05rx")
+texture = ExtResource("3_3hxdm")
+base_color = Color(0.16643, 0.468548, 0.623534, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("5_dnrmk")
+shirt_texture = ExtResource("6_bc0bi")
+sleeve_texture = ExtResource("7_endld")
+base_color = Color(0.11688, 0.708214, 0.904979, 1)
+sleeve_color = Color(0.117647, 0.709804, 0.905882, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("4_3vdrs")
+body_type = 1
+species = 8
+head_index = 3
+eyelashes = false
+skirt = false
+head_color = Color(0.996078, 0.898039, 0.317647, 1)
+torso_color = Color(0.996078, 0.898039, 0.317647, 1)
+leg_color = Color(0.996078, 0.898039, 0.317647, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("9_ynq6l")
+character_name = "Tom Cheezyburger"
+character_summary = "- Soundless
+- 50% base Lure boost
+- Squirt goes after Lure, starts with both
+- 1 extra task reroll"
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("8_1jtwt")
+starting_laff = 30
+starting_items = Array[ExtResource("10_8j3a8")]([])
+base_stats = SubResource("Resource_jj61k")
+random_character_stored_name = ""

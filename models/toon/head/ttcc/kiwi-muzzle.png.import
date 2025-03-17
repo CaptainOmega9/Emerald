@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvxbygwobribc"
-path="res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"
+uid="uid://bw3r3gtqrvei6"
+path="res://.godot/imported/kiwi-muzzle.png-df309cc418270a6fe8830f1e761c1f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/props/toon_props/cannon/cannon_0.png"
-dest_files=["res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"]
+source_file="res://models/toon/head/ttcc/kiwi-muzzle.png"
+dest_files=["res://.godot/imported/kiwi-muzzle.png-df309cc418270a6fe8830f1e761c1f44.ctex"]
 
 [params]
 

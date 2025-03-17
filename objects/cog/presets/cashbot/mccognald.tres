@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pickpocket.gd" id="2"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="3"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="4"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="5"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/clown/sleeveClown.png" id="6"]
+[ext_resource type="Texture2D" path="res://models/cogs/textures/clown/blazerClown.png" id="7"]
+[ext_resource type="PackedScene" path="res://models/cogs/heads/yesman.glb" id="8"]
+[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10"]
+[ext_resource type="Resource" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11"]
+
+[sub_resource type="Resource" id="Resource_clq8v"]
+script = ExtResource("2")
+do_money_steal = false
+accuracy = 75
+damage = 1
+ignore_stats = false
+summary = "This is actually a bug."
+attack_lines = Array[String](["Boy, I really hope someone got fired for that blunder."])
+target_type = 0
+action_name = "ERR: COG HAS NO ATTACKS"
+one_time_use = false
+
+[resource]
+script = ExtResource("9")
+department = 1
+suit = 0
+custom_blazer_tex = ExtResource("7")
+custom_arm_tex = ExtResource("6")
+custom_leg_tex = ExtResource("6")
+cog_name = "McCognald"
+name_plural = ""
+head = ExtResource("8")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
+scale = 6.65
+head_textures = Array[Texture2D]([])
+hand_color = Color(0.998695, 1, 0.189642, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1")]([SubResource("Resource_clq8v"), ExtResource("3"), ExtResource("4"), ExtResource("5")])
+level_low = 8
+level_high = 12
+status_effects = Array[ExtResource("10")]([ExtResource("11")])
+is_mod_cog = true
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["I'm lovin' it.", "Please don't sue me for obesity...", "You can be my new ingredient for my mcnuggets."])
+external_assets = {
+"head_model": "",
+"head_textures": ["user://save/custom_cogs/ronald_cog.png"]
+}

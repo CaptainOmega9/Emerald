@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvxbygwobribc"
-path="res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"
+uid="uid://cwawv46jf57bi"
+path="res://.godot/imported/ttcc_species_toon_palette_2tmlc_1.png-f58252f71a04956c200b5fd8d8d55cb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/props/toon_props/cannon/cannon_0.png"
-dest_files=["res://.godot/imported/cannon_0.png-179e9dc40faf9cff1db32c89f411ca58.ctex"]
+source_file="res://models/toon/head/ttcc/ttcc_species_toon_palette_2tmlc_1.png"
+dest_files=["res://.godot/imported/ttcc_species_toon_palette_2tmlc_1.png-f58252f71a04956c200b5fd8d8d55cb7.ctex"]
 
 [params]
 

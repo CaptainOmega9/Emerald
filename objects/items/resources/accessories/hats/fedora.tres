@@ -291,11 +291,11 @@ want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Fedora"
 item_description = "Life on the edge"
-big_description = "+10% Evasiveness, -20% Defense"
+big_description = "+20% Evasiveness, -20% Defense"
 model = ExtResource("2_xav6c")
 stats_add = {
 "defense": -0.2,
-"evasiveness": 0.1
+"evasiveness": 0.2
 }
 stats_multiply = {}
 player_values = {}

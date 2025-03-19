@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dw6njtifukrwi"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_o7sda"]
+
+[resource]
+script = ExtResource("1_o7sda")
+qualitoon = 4
+rarity = 0
+evergreen = false
+realtime = false
+slot = 0
+world_scale = 1.0
+want_ui_spin = true
+ui_cam_offset = 0.0
+item_name = "Loki Syphon"
+item_description = ""
+big_description = "Unique to Loki."
+stats_add = {
+"anomaly_boost": 3
+}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+remember_item = true
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

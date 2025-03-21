@@ -12,6 +12,7 @@ const ANOMALIES_POSITIVE: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_overheal.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_record_profits.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_organic_gags.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_low_gravity.gd",
 ]
 const ANOMALIES_NEUTRAL: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_marathon.gd",
@@ -21,6 +22,8 @@ const ANOMALIES_NEUTRAL: Array[String] = [
 const ANOMALIES_NEGATIVE: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_up.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_out_of_touch.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_underheal.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_stale_gags.gd",
 ]
 
 const LEVEL_RANGES: Dictionary = {

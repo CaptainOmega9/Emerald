@@ -148,3 +148,7 @@ func tomcheezyburger(player: Player) -> void:
 	player.stats.gags_unlocked['Squirt'] = 1
 	player.stats.gag_effectiveness['Lure'] = 1.5
 	player.stats.quest_rerolls = 4
+func loki(player: Player) -> void:
+	player.stats.gag_unlocked['Throw'] = 1
+	player.stats.gag_unlocked['Drop'] = 1
+	

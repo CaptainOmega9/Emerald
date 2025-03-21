@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=15 format=3 uid="uid://d0syr0sd8rdiv"]
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=16 format=3 uid="uid://d0syr0sd8rdiv"]
 
 [ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_16684"]
 [ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_jg4t8"]
@@ -10,18 +10,19 @@
 [ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_pxpbq"]
 [ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_5qeni"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_h2mre"]
+[ext_resource type="Resource" uid="uid://dw6njtifukrwi" path="res://objects/items/resources/passive/loki_item.tres" id="11_jg4t8"]
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("1_16684")
-damage = 1.0
-defense = 0.5
+damage = 1.2
+defense = 0.75
 evasiveness = 1.1
 accuracy = 1.0
-speed = 1.1
-max_turns = 4
+speed = 1.0
+max_turns = 3
 max_hp = 25
 hp = 25
-turns = 2
+turns = 1
 
 [sub_resource type="Resource" id="Resource_ugrs1"]
 script = ExtResource("2_jg4t8")
@@ -44,22 +45,20 @@ species = 1
 head_index = 2
 eyelashes = false
 skirt = false
-head_color = Color(0.933333, 0.262745, 0.278431, 1)
-torso_color = Color(0.933333, 0.262745, 0.278431, 1)
-leg_color = Color(0.933333, 0.262745, 0.278431, 1)
+head_color = Color(0.281592, 0.808143, 0, 1)
+torso_color = Color(0.282353, 0.807843, 0, 1)
+leg_color = Color(0.282353, 0.807843, 0, 1)
 shirt = SubResource("Resource_2lryd")
 bottoms = SubResource("Resource_ugrs1")
 
 [resource]
 script = ExtResource("9_5qeni")
-character_name = "Jamie Whiskerton"
-character_summary = "- 20% less Laff
-- 10% more evasion
-- Attacks restore laff.
+character_name = "Loki"
+character_summary = "- Each floor has +2 annomalies.
 - Starts with "
 dna = SubResource("Resource_ax4gq")
 gag_loadout = ExtResource("8_pxpbq")
 starting_laff = 30
-starting_items = Array[ExtResource("10_h2mre")]([])
+starting_items = Array[ExtResource("10_h2mre")]([ExtResource("11_jg4t8")])
 base_stats = SubResource("Resource_jj61k")
-random_character_stored_name = ""
+random_character_stored_name = null

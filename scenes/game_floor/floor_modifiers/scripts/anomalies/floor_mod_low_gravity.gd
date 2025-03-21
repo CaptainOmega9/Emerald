@@ -13,3 +13,9 @@ func get_mod_name() -> String:
 
 func get_mod_quality() -> ModType:
 	return ModType.POSITIVE
+	
+func get_mod_icon() -> Texture2D:
+	return load("res://ui_assets/player_ui/pause/tightened_security.png")
+
+func get_description() -> String:
+	return "You can jump higher!"
